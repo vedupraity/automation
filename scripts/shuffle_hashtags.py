@@ -29,6 +29,6 @@ def shuffle_hashtags(tags):
     random.shuffle(optional_hashtag_list)
     selected_optional_hashtags = optional_hashtag_list[0:optional_hashtag_limit]
 
-    shuffled_hashtags = selected_primary_hashtags + selected_secondary_hashtags + selected_optional_hashtags
+    return selected_primary_hashtags + selected_secondary_hashtags + selected_optional_hashtags
 
 print(' '.join(shuffle_hashtags(tags)))
